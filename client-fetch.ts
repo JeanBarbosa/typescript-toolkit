@@ -1,3 +1,10 @@
+/* 
+  using typed arrays to get data from a fetch request
+  use case:
+
+  const [error, data] = await httpClientFetch({ method: 'GET', url: 'https://jsonplaceholder.typicode.com/posts' });
+*/
+
 export type RequestConfig<TData = unknown> = {
   baseURL?: string;
   url?: string;
